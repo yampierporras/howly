@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Howly</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Paralax -->
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <!-- Angular -->
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Arrancador angular -->
+    <script type="text/javascript" src="appAngular.js"></script>
+</head>
+<body ng-app="appHowly">
+    <div id="wrap">
+        <div class="cabeza col-xs-12" ng-controller="MainCtrl">
+            <div class="container">
+                <h1 class="titulo">Howly Seven</h1>
+                <div class="register">
+                    <a ng-click="goLogin()">Login</a>
+                    <a ng-click="goRegistro()">SignUp</a>
+                </div>
+                <div class="">
+
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable" aria-expanded="false">
+                        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="collapsable">
+                    <ul class="nav navbar-nav">
+                        <li><a ng-click="goInicio()">Inicio</a></li>
+                        <li><a href="">Historia</a></li>
+                        <li><a href="">Jugar</a></li>
+                        <li><a href="">Comunidad</a></li>
+                        <li><a href="">Contactanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo col-xs-12">
+            <div class="container">
+                <ui-view></ui-view><!-- Aqui van las plantillas -->
+            </div>
+        </div>
+    </div>
+    <div id="footer" ng-controller="MainCtrl">
+        <div class="pie col-xs-12">
+            <div class="container">
+                <div class="info">
+                    <p>©Howly</p>
+                    <p>Ghampier Hector Porras Gago</p>
+                    <p>yampierporras@gmail.com</p>
+                </div>
+                <div class="social">
+                    <p>facebook</p>
+                    <p>twitter</p>
+                    <p>github</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
