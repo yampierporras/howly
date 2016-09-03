@@ -56,7 +56,7 @@ body {
 }
 @media (min-width: 768px) {
     .titulo{
-        margin-left: 150px;
+        margin-left: 200px;
     }
 }
 .cabeza, .pie{
@@ -66,9 +66,13 @@ body {
 .cabeza .register{
     color: green;
     float: right;
-    width: 150px;
+    width: 200px;
     top: 20px;
 }
+.cabeza .register >.dropdown{
+    float: right;
+}
+
 .cabeza .register >a{
     color: #ffffff;
     padding: 10px;
